@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200623 14:04:16.522" rpa="false">
+<suite id="s1" name="SPASS" source="C:\Users\j.antonio\eclipse-workspace\SPASS">
+<suite id="s1-s1" name="SASignIn" source="C:\Users\j.antonio\eclipse-workspace\SPASS\SASignIn.robot">
+<test id="s1-s1-t1" name="Menus">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://dev-admin.samsungpass.com/#/</arg>
+<arg>${browsers}[0]</arg>
+</arguments>
+<msg timestamp="20200623 14:04:17.038" level="INFO">Opening browser 'Chrome' to base url 'https://dev-admin.samsungpass.com/#/'.</msg>
+<status status="PASS" starttime="20200623 14:04:17.037" endtime="20200623 14:04:22.744"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20200623 14:04:22.744" endtime="20200623 14:04:22.746"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200623 14:04:27.748" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200623 14:04:22.747" endtime="20200623 14:04:27.749"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-u99vxg</arg>
+</arguments>
+<msg timestamp="20200623 14:04:27.752" level="INFO">Clicking element 'class=css-u99vxg'.</msg>
+<status status="PASS" starttime="20200623 14:04:27.750" endtime="20200623 14:04:27.906"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200623 14:04:29.909" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200623 14:04:27.907" endtime="20200623 14:04:29.909"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200623 14:04:29.910" endtime="20200623 14:04:33.208"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" starttime="20200623 14:04:17.036" endtime="20200623 14:04:33.210" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200623 14:04:16.613" endtime="20200623 14:04:33.212"></status>
+</suite>
+<status status="PASS" starttime="20200623 14:04:16.580" endtime="20200623 14:04:33.219"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="SPASS">SPASS</stat>
+<stat pass="1" fail="0" id="s1-s1" name="SASignIn">SPASS.SASignIn</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
