@@ -13,7 +13,7 @@ NavigateToSamsungPassPortal
     Close Browser
     
 NavigationMenu
-    [Tags]    Regression2
+    [Tags]    PASSPORTAL-1476    # not sure yet, just assuming of the scope JIRA ticket no.
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Set Browser Implicit Wait    10s 
     Sleep    5s
@@ -61,14 +61,8 @@ NavigationMenu
     Sleep    2s    
     # Partner Portal Management
     Click Element    id=lnbSystemMgmtLink    
-    Sleep    2s
-    Click Element    //*[@id="lnbSystemMgmtLink"][1]    
-    Sleep    2s    
-    Click Element    id=lnbSystemMgmtServerMgmtLink
-    Sleep    2s
-    Click Element    //*[@id="lnbSystemMgmtLink"][1]
-    Sleep    2s    
-    Click Element    id=lnbSystemMgmtFunctionSettingLink
+    Sleep    2s  
+    Click Element    //*[@id="lnbSystemMgmtLink"][2]    
     Sleep    2s    
     # System Management
     Close Browser    
@@ -76,7 +70,7 @@ NavigationMenu
     # Not yet completed!
     
 AccountManagement
-    [Tags]    Demo1
+    [Tags]    PASSPORTAL-1476    # not sure yet, just assuming of the scope JIRA ticket no.
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Set Browser Implicit Wait    10s 
     Sleep    5s
@@ -94,8 +88,8 @@ AccountManagement
     Sleep    2s
     Close Browser    
     Log To Console    %{username} ran this test on %{os}. Successfully displayed all working Account Management menus.
-    # USe this for sample test script demo for SPass
-    
+    # Use this for the actual module of spass demo
+
 
     
 
