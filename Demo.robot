@@ -6,14 +6,14 @@ Library    Selenium2Library
 
 *** Test Cases ***
 NavigateToSamsungPassPortal
-    [Tags]    Regression1
+    [Tags]    Regression1_Happy path
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Set Browser Implicit Wait    10s 
     Sleep    5s    
     Close Browser
     
 NavigationMenu
-    [Tags]    PASSPORTAL-1476    # sample JIRA ticket no.
+    [Tags]     Regression2_Happy path
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Set Browser Implicit Wait    10s 
     Sleep    5s
@@ -92,7 +92,7 @@ NavigationMenu
     # Not yet completed!
     
 AccountManagement
-    [Tags]    PASSPORTAL-1476    # not sure yet, just assuming of the scope JIRA ticket no.
+    [Tags]    Regression3_Happy path
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Set Browser Implicit Wait    10s 
     Sleep    5s
