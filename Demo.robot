@@ -31,10 +31,11 @@ NavigateToSamsungPassPortal
     Close Browser
     
 NavigationMenu
-    [Tags]     Regression2_Happy path
+    [Tags]     Regression1_Happy path
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
+    Maximize Browser Window
     Set Browser Implicit Wait    10s 
-    Sleep    5s
+    Sleep    2s
     Wait Until Element Is Visible    id=lnbAccountManagementLink    
     Click Element    id=lnbAccountManagementLink
     Sleep    2s
@@ -78,7 +79,6 @@ NavigationMenu
     Wait Until Element Is Visible    id=lnbModelManagementLink
     Click Element    id=lnbModelManagementLink
     Sleep    2s    
-    Wait Until Element Is Visible    /*[@id="lnbModelManagementLink"][2]
     Click Element    //*[@id="lnbModelManagementLink"][2]    # use xpath as locator and add the index/location of the element
     Sleep    2s
     # App Management
@@ -100,8 +100,7 @@ NavigationMenu
     # Partner Portal Management
     Wait Until Element Is Visible    id=lnbSystemMgmtLink 
     Click Element    id=lnbSystemMgmtLink    
-    Sleep    2s  
-    Wait Until Element Is Visible    //*[@id="lnbSystemMgmtLink"][2]      
+    Sleep    2s    
     Click Element    //*[@id="lnbSystemMgmtLink"][2]    
     Sleep    2s    
     # System Management
@@ -109,28 +108,28 @@ NavigationMenu
     Log To Console    %{username} ran this test on %{os}. Successfully displayed all working Menus!
     # Not yet completed!
     
-AccountManagement
-    [Tags]    Regression3_Happy path
+AppManagementSearchList
+    [Tags]    Demo1_Happy path
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
+    Maximize Browser Window
     Set Browser Implicit Wait    10s 
-    Sleep    5s
-    Click Element    id=lnbAccountManagementLink
     Sleep    2s
-    Click Element    id=lnbAccountLink
+    
+    Wait Until Element Is Visible    id=lnbAppManagementLink    # Apps tab
+    Click Element    id=lnbAppManagementLink   
     Sleep    2s
-    Click Element    id=lnbPendingLink
-    Sleep    2s    
-    Click Element    id=lnbPartnerLink
+    Wait Until Element Is Visible    class=css-1n9d5gc    # Search version field
+    Input Text    class=css-1n9d5gc    11.11.11.11
+    Click Element    class=css-doaywb    # Apply button
+    Capture Page Screenshot       
     Sleep    2s
-    Click Element    id=lnbRoleManagementLink
+    Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
-    Click Element    id=lnbRoleManagementRoleGroupLink
-    Sleep    2s
-    Close Browser    
-    Log To Console    %{username} ran this test on %{os}. Successfully displayed all working Account Management menus.
-    # Use this for the actual module of spass demo
+    
 
-
+    
+       
+    
     
 
 
