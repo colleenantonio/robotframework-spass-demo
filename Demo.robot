@@ -115,6 +115,7 @@ AppManagementSearchList
     Set Browser Implicit Wait    10s 
     Sleep    2s
     
+    # Search for a Version ID
     Wait Until Element Is Visible    id=lnbAppManagementLink    # Apps tab
     Click Element    id=lnbAppManagementLink   
     Sleep    2s
@@ -123,7 +124,23 @@ AppManagementSearchList
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot       
     Sleep    2s
+    
+    # Check the Version Detail modal
+    Click Element    class=css-7fddae    # Version ID
+    Sleep    2s
+    Page Should Contain    Version
+    Page Should Contain    Download URL
+    Page Should Contain    Activation
+    Page Should Contain    Forced Update
+    Page Should Contain    Status
+    Sleep    2s
+    Click Element    id=dialogCancel    # Close button
+    Sleep    2s    
     Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    2s
+
+    # Filter Activation status 
+    Click Element    (//*[text()='Activation'])[1]
     Sleep    2s
     
 
