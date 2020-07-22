@@ -115,17 +115,28 @@ AppManagementSearchList
     Set Browser Implicit Wait    10s 
     Sleep    2s
     
-    # Search for a Version ID
+    # Verify proper navigation to App Management > Apps > List
     Wait Until Element Is Visible    id=lnbAppManagementLink    # Apps tab
     Click Element    id=lnbAppManagementLink   
     Sleep    2s
+    
+    # Verify column headers
+    Page Should Contain    Version
+    Page Should Contain    Activation    
+    Page Should Contain    Forced Update    
+    Page Should Contain    Updated Dated
+    Page Should Contain    Deleted    
+    Page Should Contain    Status   
+    Sleep    2s
+    
+    # Verify Search function for Version field
     Wait Until Element Is Visible    class=css-1n9d5gc    # Search version field
     Input Text    class=css-1n9d5gc    11.11.11.11
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot       
     Sleep    2s
     
-    # Check the Version Detail modal
+    # Verify Detail view modal
     Click Element    class=css-7fddae    # Version ID
     Sleep    2s
     Page Should Contain    Version
@@ -139,13 +150,130 @@ AppManagementSearchList
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
 
-    # Filter Activation status 
+    # Verify Filter panel and selection
+    # Activation 
     Click Element    (//*[text()='Activation'])[1]
+    Sleep    1s
+    Click Element    //*[@id="undefined_0"]    
+    Sleep    1s
+    Click Element    class=css-doaywb    # Apply button
+    Capture Page Screenshot
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    1s
+    
+    Click Element    (//*[text()='Activation'])[1]
+    Sleep    1s
+    Click Element    //*[@id="undefined_1"]
+    Sleep    1s    
+    Click Element    class=css-doaywb    # Apply button
+    Capture Page Screenshot  
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    1s
+    
+    Click Element    (//*[text()='Activation'])[1]
+    Sleep    1s
+    Click Element    //*[@id="undefined_2"]
+    Click Element    class=css-doaywb    # Apply button
+    Capture Page Screenshot  
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    1s
+    
+    # Forced Updated
+    Click Element    (//*[text()='Forced Update'])[1]   
+    Sleep    1s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    1s
+
+    # Status
+    Click Element    (//*[text()='Status'])[1]
+    Sleep    1s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    1s
+    
+    # Deleted
+    Click Element    (//*[text()='Deleted'])[1]   
+    Sleep    1s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    1s
+    
+    # Verify Register button function
+    Wait Until Element Is Visible    id=spassAppsRegisterBtn
+    Sleep    2s
+    Click Element    id=spassAppsRegisterBtn    
+    Sleep    3s
+    Wait Until Element Is Visible    id=spassAppsRegisterForm    
+    Sleep    2s
+    
+    # Verify error message when clicking Request button with empty required fields
+    Click Element    class=css-frtf5   
+    Sleep    2s
+    
+    # Verify error message for invalid Version
+    Input Text    //*[@name="firstAppVer"]    aa
+    Input Text    //*[@name="midAppVer"]    qq
+    Input Text    //*[@name="lastAppVer"]    11
+    Input Text    //*[@name="fourthAppVer"]    22
+    Page Should Contain    Version in not valid    
     Sleep    2s
     
 
+    # Verify error message for invalid Download URL
+    Input Text    //*[@name="downloadUrl"]    www.com 
+    Page Should Contain    Website is not valid    
+    Sleep    2s
     
-       
+    # Verify successful App Registration
+    Input Text    //*[@name="firstAppVer"]    88
+    Input Text    //*[@name="midAppVer"]    88
+    Input Text    //*[@name="lastAppVer"]    88
+    Input Text    //*[@name="fourthAppVer"]    02
+    Input Text    //*[@name="downloadUrl"]    www.testrobot.com 
+    Click Element   class=css-frtf5
+    Sleep    5s
+    
+    # Verify successful display of the newly registered App
+    Input Text    class=css-1n9d5gc    88.88.88.01
+    Click Element    class=css-doaywb    # Apply button
+    Capture Page Screenshot       
+    Sleep    5s
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    2s
+    Close Browser
+    
+    # Verify successful Export to Excel function
+    Wait Until Element Is Visible    id=btnAppsListExport
+    Sleep    1s
+    Click Element    id=btnAppsListExport
+    Sleep    3s
+    Close Window  
+    
     
     
 
