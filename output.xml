@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200722 09:55:30.948" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200722 16:14:50.268" rpa="false">
 <suite id="s1" name="Robotframework-Spass-Demo" source="C:\Robot\Git Repo\robotframework-spass-demo">
 <suite id="s1-s1" name="Demo" source="C:\Robot\Git Repo\robotframework-spass-demo\Demo.robot">
-<test id="s1-s1-t1" name="AppManagementSearchList">
+<test id="s1-s1-t1" name="AppManagement">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>https://dev-admin.samsungpass.com/#/</arg>
 <arg>${browsers}[0]</arg>
 </arguments>
-<msg timestamp="20200722 09:55:31.433" level="INFO">Opening browser 'Chrome' to base url 'https://dev-admin.samsungpass.com/#/'.</msg>
-<status status="PASS" starttime="20200722 09:55:31.432" endtime="20200722 09:55:38.432"></status>
+<msg timestamp="20200722 16:14:51.264" level="INFO">Opening browser 'Chrome' to base url 'https://dev-admin.samsungpass.com/#/'.</msg>
+<status status="PASS" starttime="20200722 16:14:51.263" endtime="20200722 16:15:00.712"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200722 09:55:38.433" endtime="20200722 09:55:39.621"></status>
+<status status="PASS" starttime="20200722 16:15:00.713" endtime="20200722 16:15:01.736"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<status status="PASS" starttime="20200722 09:55:39.622" endtime="20200722 09:55:39.624"></status>
+<status status="PASS" starttime="20200722 16:15:01.736" endtime="20200722 16:15:01.738"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20200722 09:55:41.626" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:39.625" endtime="20200722 09:55:41.626"></status>
+<msg timestamp="20200722 16:15:03.740" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:01.739" endtime="20200722 16:15:03.740"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>id=lnbAppManagementLink</arg>
 </arguments>
-<status status="PASS" starttime="20200722 09:55:41.626" endtime="20200722 09:55:41.665"></status>
+<status status="PASS" starttime="20200722 16:15:03.740" endtime="20200722 16:15:03.782"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id=lnbAppManagementLink</arg>
 </arguments>
-<msg timestamp="20200722 09:55:41.666" level="INFO">Clicking element 'id=lnbAppManagementLink'.</msg>
-<status status="PASS" starttime="20200722 09:55:41.666" endtime="20200722 09:55:41.784"></status>
+<msg timestamp="20200722 16:15:03.783" level="INFO">Clicking element 'id=lnbAppManagementLink'.</msg>
+<status status="PASS" starttime="20200722 16:15:03.783" endtime="20200722 16:15:03.910"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>2s</arg>
+<arg>3s</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.786" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:41.784" endtime="20200722 09:55:43.786"></status>
+<msg timestamp="20200722 16:15:06.914" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:03.911" endtime="20200722 16:15:06.914"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Version</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.812" level="INFO">Current page contains text 'Version'.</msg>
-<status status="PASS" starttime="20200722 09:55:43.787" endtime="20200722 09:55:43.813"></status>
+<msg timestamp="20200722 16:15:06.939" level="INFO">Current page contains text 'Version'.</msg>
+<status status="PASS" starttime="20200722 16:15:06.914" endtime="20200722 16:15:06.940"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Activation</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.834" level="INFO">Current page contains text 'Activation'.</msg>
-<status status="PASS" starttime="20200722 09:55:43.813" endtime="20200722 09:55:43.835"></status>
+<msg timestamp="20200722 16:15:06.963" level="INFO">Current page contains text 'Activation'.</msg>
+<status status="PASS" starttime="20200722 16:15:06.940" endtime="20200722 16:15:06.964"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Forced Update</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.856" level="INFO">Current page contains text 'Forced Update'.</msg>
-<status status="PASS" starttime="20200722 09:55:43.835" endtime="20200722 09:55:43.857"></status>
+<msg timestamp="20200722 16:15:06.991" level="INFO">Current page contains text 'Forced Update'.</msg>
+<status status="PASS" starttime="20200722 16:15:06.964" endtime="20200722 16:15:06.992"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
-<arg>Updated Dated</arg>
+<arg>Updated Date</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.879" level="INFO">Current page contains text 'Updated Dated'.</msg>
-<status status="PASS" starttime="20200722 09:55:43.857" endtime="20200722 09:55:43.879"></status>
+<msg timestamp="20200722 16:15:07.020" level="INFO">Current page contains text 'Updated Date'.</msg>
+<status status="PASS" starttime="20200722 16:15:06.992" endtime="20200722 16:15:07.020"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Deleted</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.901" level="INFO">Current page contains text 'Deleted'.</msg>
-<status status="PASS" starttime="20200722 09:55:43.880" endtime="20200722 09:55:43.901"></status>
+<msg timestamp="20200722 16:15:07.045" level="INFO">Current page contains text 'Deleted'.</msg>
+<status status="PASS" starttime="20200722 16:15:07.021" endtime="20200722 16:15:07.045"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Status</arg>
 </arguments>
-<msg timestamp="20200722 09:55:43.922" level="INFO">Current page contains text 'Status'.</msg>
-<status status="PASS" starttime="20200722 09:55:43.902" endtime="20200722 09:55:43.923"></status>
+<msg timestamp="20200722 16:15:07.070" level="INFO">Current page contains text 'Status'.</msg>
+<status status="PASS" starttime="20200722 16:15:07.046" endtime="20200722 16:15:07.070"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20200722 09:55:45.923" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:43.923" endtime="20200722 09:55:45.923"></status>
+<msg timestamp="20200722 16:15:09.073" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:07.071" endtime="20200722 16:15:09.073"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>class=css-1n9d5gc</arg>
 </arguments>
-<status status="PASS" starttime="20200722 09:55:45.924" endtime="20200722 09:55:45.958"></status>
+<status status="PASS" starttime="20200722 16:15:09.074" endtime="20200722 16:15:09.123"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -123,784 +123,772 @@
 <arg>class=css-1n9d5gc</arg>
 <arg>11.11.11.11</arg>
 </arguments>
-<msg timestamp="20200722 09:55:45.959" level="INFO">Typing text '11.11.11.11' into text field 'class=css-1n9d5gc'.</msg>
-<status status="PASS" starttime="20200722 09:55:45.958" endtime="20200722 09:55:46.320"></status>
+<msg timestamp="20200722 16:15:09.125" level="INFO">Typing text '11.11.11.11' into text field 'class=css-1n9d5gc'.</msg>
+<status status="PASS" starttime="20200722 16:15:09.124" endtime="20200722 16:15:09.587"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>class=css-doaywb</arg>
 </arguments>
-<msg timestamp="20200722 09:55:46.321" level="INFO">Clicking element 'class=css-doaywb'.</msg>
-<status status="PASS" starttime="20200722 09:55:46.321" endtime="20200722 09:55:46.397"></status>
+<msg timestamp="20200722 16:15:09.588" level="INFO">Clicking element 'class=css-doaywb'.</msg>
+<status status="PASS" starttime="20200722 16:15:09.587" endtime="20200722 16:15:09.692"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200722 09:55:46.814" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-113.png"&gt;&lt;img src="selenium-screenshot-113.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200722 09:55:46.398" endtime="20200722 09:55:46.815"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:48.817" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:46.815" endtime="20200722 09:55:48.817"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-7fddae</arg>
-</arguments>
-<msg timestamp="20200722 09:55:48.818" level="INFO">Clicking element 'class=css-7fddae'.</msg>
-<status status="PASS" starttime="20200722 09:55:48.818" endtime="20200722 09:55:48.932"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:50.934" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:48.932" endtime="20200722 09:55:50.934"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>Version</arg>
-</arguments>
-<msg timestamp="20200722 09:55:50.954" level="INFO">Current page contains text 'Version'.</msg>
-<status status="PASS" starttime="20200722 09:55:50.935" endtime="20200722 09:55:50.954"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>Download URL</arg>
-</arguments>
-<msg timestamp="20200722 09:55:50.974" level="INFO">Current page contains text 'Download URL'.</msg>
-<status status="PASS" starttime="20200722 09:55:50.955" endtime="20200722 09:55:50.974"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>Activation</arg>
-</arguments>
-<msg timestamp="20200722 09:55:50.991" level="INFO">Current page contains text 'Activation'.</msg>
-<status status="PASS" starttime="20200722 09:55:50.974" endtime="20200722 09:55:50.992"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>Forced Update</arg>
-</arguments>
-<msg timestamp="20200722 09:55:51.008" level="INFO">Current page contains text 'Forced Update'.</msg>
-<status status="PASS" starttime="20200722 09:55:50.992" endtime="20200722 09:55:51.008"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains ``text``.</doc>
-<arguments>
-<arg>Status</arg>
-</arguments>
-<msg timestamp="20200722 09:55:51.025" level="INFO">Current page contains text 'Status'.</msg>
-<status status="PASS" starttime="20200722 09:55:51.009" endtime="20200722 09:55:51.025"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:53.027" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:51.026" endtime="20200722 09:55:53.027"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>id=dialogCancel</arg>
-</arguments>
-<msg timestamp="20200722 09:55:53.028" level="INFO">Clicking element 'id=dialogCancel'.</msg>
-<status status="PASS" starttime="20200722 09:55:53.027" endtime="20200722 09:55:53.095"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:55.098" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:53.096" endtime="20200722 09:55:55.098"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:55:55.099" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:55:55.099" endtime="20200722 09:55:55.181"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:57.183" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:55.182" endtime="20200722 09:55:57.183"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>(//*[text()='Activation'])[1]</arg>
-</arguments>
-<msg timestamp="20200722 09:55:57.183" level="INFO">Clicking element '(//*[text()='Activation'])[1]'.</msg>
-<status status="PASS" starttime="20200722 09:55:57.183" endtime="20200722 09:55:57.267"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:58.269" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:55:57.268" endtime="20200722 09:55:58.269"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="undefined_0"]</arg>
-</arguments>
-<msg timestamp="20200722 09:55:58.270" level="INFO">Clicking element '//*[@id="undefined_0"]'.</msg>
-<status status="PASS" starttime="20200722 09:55:58.269" endtime="20200722 09:55:58.360"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:55:59.361" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:55:58.360" endtime="20200722 09:55:59.361"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-doaywb</arg>
-</arguments>
-<msg timestamp="20200722 09:55:59.361" level="INFO">Clicking element 'class=css-doaywb'.</msg>
-<status status="PASS" starttime="20200722 09:55:59.361" endtime="20200722 09:55:59.427"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200722 09:55:59.792" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-114.png"&gt;&lt;img src="selenium-screenshot-114.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200722 09:55:59.427" endtime="20200722 09:55:59.792"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:01.794" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:55:59.792" endtime="20200722 09:56:01.794"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:01.795" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:01.795" endtime="20200722 09:56:01.902"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:03.904" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:01.902" endtime="20200722 09:56:03.904"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:03.905" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:03.904" endtime="20200722 09:56:03.972"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:05.974" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:03.973" endtime="20200722 09:56:05.974"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:05.975" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:05.974" endtime="20200722 09:56:06.047"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:08.049" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:06.047" endtime="20200722 09:56:08.049"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:08.051" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:08.050" endtime="20200722 09:56:08.125"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:10.128" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:08.126" endtime="20200722 09:56:10.128"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:10.129" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:10.128" endtime="20200722 09:56:10.205"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:12.206" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:10.205" endtime="20200722 09:56:12.206"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:12.206" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:12.206" endtime="20200722 09:56:12.275"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:14.277" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:12.276" endtime="20200722 09:56:14.277"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:14.278" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:56:14.278" endtime="20200722 09:56:14.359"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:15.360" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:14.359" endtime="20200722 09:56:15.360"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>(//*[text()='Activation'])[1]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:15.362" level="INFO">Clicking element '(//*[text()='Activation'])[1]'.</msg>
-<status status="PASS" starttime="20200722 09:56:15.361" endtime="20200722 09:56:15.421"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:16.423" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:15.422" endtime="20200722 09:56:16.423"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="undefined_1"]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:16.424" level="INFO">Clicking element '//*[@id="undefined_1"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:16.423" endtime="20200722 09:56:16.507"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:17.508" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:16.507" endtime="20200722 09:56:17.508"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-doaywb</arg>
-</arguments>
-<msg timestamp="20200722 09:56:17.509" level="INFO">Clicking element 'class=css-doaywb'.</msg>
-<status status="PASS" starttime="20200722 09:56:17.509" endtime="20200722 09:56:17.567"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200722 09:56:17.939" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-115.png"&gt;&lt;img src="selenium-screenshot-115.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200722 09:56:17.567" endtime="20200722 09:56:17.940"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:19.941" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:17.940" endtime="20200722 09:56:19.941"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:19.942" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:19.941" endtime="20200722 09:56:20.043"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:22.045" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:20.043" endtime="20200722 09:56:22.045"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:22.047" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:22.046" endtime="20200722 09:56:22.116"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:24.118" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:22.116" endtime="20200722 09:56:24.118"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:24.119" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:24.118" endtime="20200722 09:56:24.196"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:26.196" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:24.196" endtime="20200722 09:56:26.196"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:26.197" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:26.196" endtime="20200722 09:56:26.264"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:28.267" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:26.264" endtime="20200722 09:56:28.267"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:28.268" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:28.267" endtime="20200722 09:56:28.334"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:30.336" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:28.335" endtime="20200722 09:56:30.336"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:30.337" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:56:30.336" endtime="20200722 09:56:30.396"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:31.398" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:30.397" endtime="20200722 09:56:31.398"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>(//*[text()='Activation'])[1]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:31.398" level="INFO">Clicking element '(//*[text()='Activation'])[1]'.</msg>
-<status status="PASS" starttime="20200722 09:56:31.398" endtime="20200722 09:56:31.443"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:32.445" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:31.444" endtime="20200722 09:56:32.445"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="undefined_2"]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:32.446" level="INFO">Clicking element '//*[@id="undefined_2"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:32.446" endtime="20200722 09:56:32.521"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-doaywb</arg>
-</arguments>
-<msg timestamp="20200722 09:56:32.523" level="INFO">Clicking element 'class=css-doaywb'.</msg>
-<status status="PASS" starttime="20200722 09:56:32.522" endtime="20200722 09:56:32.590"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200722 09:56:32.968" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-116.png"&gt;&lt;img src="selenium-screenshot-116.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200722 09:56:32.591" endtime="20200722 09:56:32.969"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:34.971" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:32.969" endtime="20200722 09:56:34.972"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=rc-pagination-next</arg>
-</arguments>
-<msg timestamp="20200722 09:56:34.973" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
-<status status="PASS" starttime="20200722 09:56:34.972" endtime="20200722 09:56:35.054"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:37.057" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:35.055" endtime="20200722 09:56:37.057"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:37.058" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:56:37.057" endtime="20200722 09:56:37.134"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:38.135" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:37.134" endtime="20200722 09:56:38.135"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>(//*[text()='Forced Update'])[1]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:38.136" level="INFO">Clicking element '(//*[text()='Forced Update'])[1]'.</msg>
-<status status="PASS" starttime="20200722 09:56:38.136" endtime="20200722 09:56:38.198"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:39.200" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:38.199" endtime="20200722 09:56:39.200"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:39.201" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:56:39.201" endtime="20200722 09:56:39.254"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:40.256" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:39.255" endtime="20200722 09:56:40.256"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>(//*[text()='Status'])[1]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:40.257" level="INFO">Clicking element '(//*[text()='Status'])[1]'.</msg>
-<status status="PASS" starttime="20200722 09:56:40.256" endtime="20200722 09:56:40.320"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:41.322" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:40.320" endtime="20200722 09:56:41.322"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:41.324" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:56:41.323" endtime="20200722 09:56:41.388"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:42.390" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:41.389" endtime="20200722 09:56:42.390"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>(//*[text()='Deleted'])[1]</arg>
-</arguments>
-<msg timestamp="20200722 09:56:42.391" level="INFO">Clicking element '(//*[text()='Deleted'])[1]'.</msg>
-<status status="PASS" starttime="20200722 09:56:42.391" endtime="20200722 09:56:42.459"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:43.462" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:42.460" endtime="20200722 09:56:43.462"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-1ymwrj5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:43.464" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
-<status status="PASS" starttime="20200722 09:56:43.463" endtime="20200722 09:56:43.519"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:44.522" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200722 09:56:43.520" endtime="20200722 09:56:44.522"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>id=spassAppsRegisterBtn</arg>
-</arguments>
-<status status="PASS" starttime="20200722 09:56:44.522" endtime="20200722 09:56:44.556"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:46.557" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:44.556" endtime="20200722 09:56:46.557"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>id=spassAppsRegisterBtn</arg>
-</arguments>
-<msg timestamp="20200722 09:56:46.557" level="INFO">Clicking element 'id=spassAppsRegisterBtn'.</msg>
-<status status="PASS" starttime="20200722 09:56:46.557" endtime="20200722 09:56:46.662"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:49.663" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:46.663" endtime="20200722 09:56:49.663"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>id=spassAppsRegisterForm</arg>
-</arguments>
-<status status="PASS" starttime="20200722 09:56:49.663" endtime="20200722 09:56:49.697"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:51.700" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:49.697" endtime="20200722 09:56:51.700"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-frtf5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:51.702" level="INFO">Clicking element 'class=css-frtf5'.</msg>
-<status status="PASS" starttime="20200722 09:56:51.701" endtime="20200722 09:56:51.798"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20200722 09:56:53.800" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:51.798" endtime="20200722 09:56:53.800"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="firstAppVer"]</arg>
-<arg>88</arg>
-</arguments>
-<msg timestamp="20200722 09:56:53.801" level="INFO">Typing text '88' into text field '//*[@name="firstAppVer"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:53.800" endtime="20200722 09:56:53.945"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="midAppVer"]</arg>
-<arg>88</arg>
-</arguments>
-<msg timestamp="20200722 09:56:53.945" level="INFO">Typing text '88' into text field '//*[@name="midAppVer"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:53.945" endtime="20200722 09:56:54.085"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="lastAppVer"]</arg>
-<arg>88</arg>
-</arguments>
-<msg timestamp="20200722 09:56:54.085" level="INFO">Typing text '88' into text field '//*[@name="lastAppVer"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:54.085" endtime="20200722 09:56:54.238"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="fourthAppVer"]</arg>
-<arg>01</arg>
-</arguments>
-<msg timestamp="20200722 09:56:54.239" level="INFO">Typing text '01' into text field '//*[@name="fourthAppVer"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:54.239" endtime="20200722 09:56:54.407"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="downloadUrl"]</arg>
-<arg>www.testrobot.com</arg>
-</arguments>
-<msg timestamp="20200722 09:56:54.408" level="INFO">Typing text 'www.testrobot.com' into text field '//*[@name="downloadUrl"]'.</msg>
-<status status="PASS" starttime="20200722 09:56:54.408" endtime="20200722 09:56:54.725"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>class=css-frtf5</arg>
-</arguments>
-<msg timestamp="20200722 09:56:54.725" level="INFO">Clicking element 'class=css-frtf5'.</msg>
-<status status="PASS" starttime="20200722 09:56:54.725" endtime="20200722 09:56:54.791"></status>
+<msg timestamp="20200722 16:15:10.129" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-197.png"&gt;&lt;img src="selenium-screenshot-197.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200722 16:15:09.693" endtime="20200722 16:15:10.129"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20200722 09:56:59.791" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200722 09:56:54.791" endtime="20200722 09:56:59.791"></status>
+<msg timestamp="20200722 16:15:15.132" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:10.130" endtime="20200722 16:15:15.132"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>class=css-1n9d5gc</arg>
-<arg>88.88.88.01</arg>
+<arg>class=css-7fddae</arg>
 </arguments>
-<msg timestamp="20200722 09:56:59.792" level="INFO">Typing text '88.88.88.01' into text field 'class=css-1n9d5gc'.</msg>
+<msg timestamp="20200722 16:15:15.133" level="INFO">Clicking element 'class=css-7fddae'.</msg>
+<status status="PASS" starttime="20200722 16:15:15.133" endtime="20200722 16:15:15.260"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:17.261" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:15.261" endtime="20200722 16:15:17.261"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Version</arg>
+</arguments>
+<msg timestamp="20200722 16:15:17.283" level="INFO">Current page contains text 'Version'.</msg>
+<status status="PASS" starttime="20200722 16:15:17.261" endtime="20200722 16:15:17.283"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Download URL</arg>
+</arguments>
+<msg timestamp="20200722 16:15:17.310" level="INFO">Current page contains text 'Download URL'.</msg>
+<status status="PASS" starttime="20200722 16:15:17.284" endtime="20200722 16:15:17.310"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Activation</arg>
+</arguments>
+<msg timestamp="20200722 16:15:17.333" level="INFO">Current page contains text 'Activation'.</msg>
+<status status="PASS" starttime="20200722 16:15:17.311" endtime="20200722 16:15:17.333"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Forced Update</arg>
+</arguments>
+<msg timestamp="20200722 16:15:17.353" level="INFO">Current page contains text 'Forced Update'.</msg>
+<status status="PASS" starttime="20200722 16:15:17.333" endtime="20200722 16:15:17.354"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Status</arg>
+</arguments>
+<msg timestamp="20200722 16:15:17.377" level="INFO">Current page contains text 'Status'.</msg>
+<status status="PASS" starttime="20200722 16:15:17.355" endtime="20200722 16:15:17.378"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:22.379" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:17.378" endtime="20200722 16:15:22.379"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=dialogCancel</arg>
+</arguments>
+<msg timestamp="20200722 16:15:22.380" level="INFO">Clicking element 'id=dialogCancel'.</msg>
+<status status="PASS" starttime="20200722 16:15:22.380" endtime="20200722 16:15:22.459"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:24.462" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:22.459" endtime="20200722 16:15:24.462"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:15:24.464" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:15:24.463" endtime="20200722 16:15:24.573"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:26.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:24.574" endtime="20200722 16:15:26.577"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='Activation'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:15:26.578" level="INFO">Clicking element '(//*[text()='Activation'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:15:26.578" endtime="20200722 16:15:26.655"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:27.659" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200722 16:15:26.656" endtime="20200722 16:15:27.659"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="undefined_0"]</arg>
+</arguments>
+<msg timestamp="20200722 16:15:27.660" level="INFO">Clicking element '//*[@id="undefined_0"]'.</msg>
+<status status="PASS" starttime="20200722 16:15:27.659" endtime="20200722 16:15:27.776"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:29.779" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:27.776" endtime="20200722 16:15:29.779"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-doaywb</arg>
+</arguments>
+<msg timestamp="20200722 16:15:29.780" level="INFO">Clicking element 'class=css-doaywb'.</msg>
+<status status="PASS" starttime="20200722 16:15:29.779" endtime="20200722 16:15:29.852"></status>
+</kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200722 09:57:04.409" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=84.0.4147.89)
-</msg>
-<status status="FAIL" starttime="20200722 09:57:04.372" endtime="20200722 09:57:04.410"></status>
+<msg timestamp="20200722 16:15:30.271" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-198.png"&gt;&lt;img src="selenium-screenshot-198.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200722 16:15:29.852" endtime="20200722 16:15:30.272"></status>
 </kw>
-<msg timestamp="20200722 09:57:04.411" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=84.0.4147.89)
-</msg>
-<msg timestamp="20200722 09:57:04.419" level="FAIL">Element with locator 'class=css-1n9d5gc' not found.</msg>
-<status status="FAIL" starttime="20200722 09:56:59.791" endtime="20200722 09:57:04.419"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:32.275" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:30.273" endtime="20200722 16:15:32.275"></status>
 </kw>
-<tags>
-<tag>Demo1_Happy path</tag>
-</tags>
-<status status="FAIL" starttime="20200722 09:55:31.431" endtime="20200722 09:57:04.420" critical="yes">Element with locator 'class=css-1n9d5gc' not found.</status>
-</test>
-<status status="FAIL" starttime="20200722 09:55:31.037" endtime="20200722 09:57:04.422"></status>
-</suite>
-<status status="FAIL" starttime="20200722 09:55:31.004" endtime="20200722 09:57:04.428"></status>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
-</total>
-<tag>
-<stat pass="0" fail="1">Demo1_Happy path</stat>
-</tag>
-<suite>
-<stat pass="0" fail="1" id="s1" name="Robotframework-Spass-Demo">Robotframework-Spass-Demo</stat>
-<stat pass="0" fail="1" id="s1-s1" name="Demo">Robotframework-Spass-Demo.Demo</stat>
-</suite>
-</statistics>
-<errors>
-<msg timestamp="20200722 09:57:04.411" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=84.0.4147.89)
-</msg>
-</errors>
-</robot>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:32.276" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:32.276" endtime="20200722 16:15:32.401"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:34.402" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:32.401" endtime="20200722 16:15:34.402"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:34.403" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:34.403" endtime="20200722 16:15:34.480"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:36.482" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:34.480" endtime="20200722 16:15:36.482"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:36.483" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:36.483" endtime="20200722 16:15:36.562"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:38.564" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:36.562" endtime="20200722 16:15:38.564"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:38.565" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:38.565" endtime="20200722 16:15:38.652"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:40.656" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:38.654" endtime="20200722 16:15:40.656"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:40.658" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:40.657" endtime="20200722 16:15:40.748"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:42.750" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:40.749" endtime="20200722 16:15:42.750"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:42.752" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:42.751" endtime="20200722 16:15:42.837"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:44.839" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:42.837" endtime="20200722 16:15:44.839"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:15:44.840" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:15:44.839" endtime="20200722 16:15:44.948"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:46.950" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:44.949" endtime="20200722 16:15:46.950"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='Activation'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:15:46.951" level="INFO">Clicking element '(//*[text()='Activation'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:15:46.951" endtime="20200722 16:15:47.028"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:48.031" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200722 16:15:47.028" endtime="20200722 16:15:48.031"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="undefined_1"]</arg>
+</arguments>
+<msg timestamp="20200722 16:15:48.032" level="INFO">Clicking element '//*[@id="undefined_1"]'.</msg>
+<status status="PASS" starttime="20200722 16:15:48.032" endtime="20200722 16:15:48.139"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:50.140" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:48.140" endtime="20200722 16:15:50.140"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-doaywb</arg>
+</arguments>
+<msg timestamp="20200722 16:15:50.141" level="INFO">Clicking element 'class=css-doaywb'.</msg>
+<status status="PASS" starttime="20200722 16:15:50.141" endtime="20200722 16:15:50.212"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200722 16:15:50.641" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-199.png"&gt;&lt;img src="selenium-screenshot-199.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200722 16:15:50.212" endtime="20200722 16:15:50.642"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:52.643" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:50.642" endtime="20200722 16:15:52.643"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:52.644" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:52.643" endtime="20200722 16:15:52.741"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:54.744" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:52.741" endtime="20200722 16:15:54.744"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:54.744" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:54.744" endtime="20200722 16:15:54.819"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:56.821" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:54.819" endtime="20200722 16:15:56.821"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:56.822" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:56.822" endtime="20200722 16:15:56.902"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:15:58.904" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:56.902" endtime="20200722 16:15:58.904"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:15:58.905" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:15:58.905" endtime="20200722 16:15:58.980"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:00.983" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:15:58.981" endtime="20200722 16:16:00.983"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:16:00.984" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:16:00.983" endtime="20200722 16:16:01.066"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:03.069" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:01.066" endtime="20200722 16:16:03.069"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:16:03.070" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:16:03.069" endtime="20200722 16:16:03.156"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:05.157" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:03.156" endtime="20200722 16:16:05.157"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='Activation'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:05.158" level="INFO">Clicking element '(//*[text()='Activation'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:16:05.158" endtime="20200722 16:16:05.223"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:06.225" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200722 16:16:05.223" endtime="20200722 16:16:06.225"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="undefined_2"]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:06.227" level="INFO">Clicking element '//*[@id="undefined_2"]'.</msg>
+<status status="PASS" starttime="20200722 16:16:06.226" endtime="20200722 16:16:06.329"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:08.332" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:06.330" endtime="20200722 16:16:08.332"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-doaywb</arg>
+</arguments>
+<msg timestamp="20200722 16:16:08.333" level="INFO">Clicking element 'class=css-doaywb'.</msg>
+<status status="PASS" starttime="20200722 16:16:08.333" endtime="20200722 16:16:08.391"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200722 16:16:08.853" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-200.png"&gt;&lt;img src="selenium-screenshot-200.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200722 16:16:08.392" endtime="20200722 16:16:08.854"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:10.855" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:08.854" endtime="20200722 16:16:10.856"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:16:10.857" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:16:10.856" endtime="20200722 16:16:10.952"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:12.955" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:10.953" endtime="20200722 16:16:12.955"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:16:12.956" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:16:12.955" endtime="20200722 16:16:13.034"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:15.036" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:13.034" endtime="20200722 16:16:15.036"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='Forced Update'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:15.037" level="INFO">Clicking element '(//*[text()='Forced Update'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:16:15.036" endtime="20200722 16:16:15.129"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:17.131" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:15.130" endtime="20200722 16:16:17.131"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:16:17.132" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:16:17.132" endtime="20200722 16:16:17.193"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:19.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:17.194" endtime="20200722 16:16:19.195"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='Status'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:19.196" level="INFO">Clicking element '(//*[text()='Status'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:16:19.196" endtime="20200722 16:16:19.292"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:21.294" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:19.293" endtime="20200722 16:16:21.294"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:16:21.295" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:16:21.295" endtime="20200722 16:16:21.373"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:23.376" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:21.374" endtime="20200722 16:16:23.376"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='Deleted'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:23.377" level="INFO">Clicking element '(//*[text()='Deleted'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:16:23.376" endtime="20200722 16:16:23.450"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:25.452" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:23.450" endtime="20200722 16:16:25.452"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:16:25.454" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:16:25.453" endtime="20200722 16:16:25.534"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:30.537" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:25.535" endtime="20200722 16:16:30.537"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='From'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:30.538" level="INFO">Clicking element '(//*[text()='From'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:16:30.538" endtime="20200722 16:16:30.709"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:32.711" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:30.710" endtime="20200722 16:16:32.711"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="spassAppsFilterForm"]/div/div[2]/div[3]/div[2]/div/div/div[2]/div[2]/div[1]/div[4]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:32.712" level="INFO">Clicking element '//*[@id="spassAppsFilterForm"]/div/div[2]/div[3]/div[2]/div/div/div[2]/div[2]/div[1]/div[4]'.</msg>
+<status status="PASS" starttime="20200722 16:16:32.712" endtime="20200722 16:16:32.847"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:33.850" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200722 16:16:32.847" endtime="20200722 16:16:33.850"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//*[text()='To'])[1]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:33.851" level="INFO">Clicking element '(//*[text()='To'])[1]'.</msg>
+<status status="PASS" starttime="20200722 16:16:33.851" endtime="20200722 16:16:33.959"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:35.960" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:33.959" endtime="20200722 16:16:35.960"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="spassAppsFilterForm"]/div/div[2]/div[4]/div[2]/div/div/div[2]/div[2]/div[4]/div[4]</arg>
+</arguments>
+<msg timestamp="20200722 16:16:35.961" level="INFO">Clicking element '//*[@id="spassAppsFilterForm"]/div/div[2]/div[4]/div[2]/div/div/div[2]/div[2]/div[4]/div[4]'.</msg>
+<status status="PASS" starttime="20200722 16:16:35.961" endtime="20200722 16:16:36.083"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:38.086" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:36.084" endtime="20200722 16:16:38.086"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-doaywb</arg>
+</arguments>
+<msg timestamp="20200722 16:16:38.087" level="INFO">Clicking element 'class=css-doaywb'.</msg>
+<status status="PASS" starttime="20200722 16:16:38.086" endtime="20200722 16:16:38.180"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200722 16:16:38.626" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-201.png"&gt;&lt;img src="selenium-screenshot-201.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200722 16:16:38.180" endtime="20200722 16:16:38.627"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:40.629" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:38.627" endtime="20200722 16:16:40.629"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:16:40.631" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:16:40.630" endtime="20200722 16:16:40.727"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:42.730" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:40.728" endtime="20200722 16:16:42.730"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:16:42.732" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:16:42.731" endtime="20200722 16:16:42.813"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:44.816" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:42.814" endtime="20200722 16:16:44.816"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=rc-pagination-next</arg>
+</arguments>
+<msg timestamp="20200722 16:16:44.818" level="INFO">Clicking element 'class=rc-pagination-next'.</msg>
+<status status="PASS" starttime="20200722 16:16:44.817" endtime="20200722 16:16:44.892"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:46.896" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200722 16:16:44.893" endtime="20200722 16:16:46.896"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=css-1ymwrj5</arg>
+</arguments>
+<msg timestamp="20200722 16:16:46.897" level="INFO">Clicking element 'class=css-1ymwrj5'.</msg>
+<status status="PASS" starttime="20200722 16:16:46.897" endtime="20200722 16:16:46.991"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id=spassAppsRegisterBtn</arg>
+</arguments>
+<status status="PASS" starttime="20200722 16:16:46.992" endtime="20200722 16:16:47.059"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200722 16:16:49.060" level="INFO">Slept 2 seconds</msg>

@@ -108,8 +108,8 @@ NavigationMenu
     Log To Console    %{username} ran this test on %{os}. Successfully displayed all working Menus!
     # Not yet completed!
     
-AppManagementSearchList
-    [Tags]    Demo1_Happy path
+AppManagement
+    [Tags]    Demo
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Maximize Browser Window
     Set Browser Implicit Wait    10s 
@@ -118,13 +118,13 @@ AppManagementSearchList
     # Verify proper navigation to App Management > Apps > List
     Wait Until Element Is Visible    id=lnbAppManagementLink    # Apps tab
     Click Element    id=lnbAppManagementLink   
-    Sleep    2s
+    Sleep    3s
     
     # Verify column headers
     Page Should Contain    Version
     Page Should Contain    Activation    
     Page Should Contain    Forced Update    
-    Page Should Contain    Updated Dated
+    Page Should Contain    Updated Date
     Page Should Contain    Deleted    
     Page Should Contain    Status   
     Sleep    2s
@@ -134,7 +134,7 @@ AppManagementSearchList
     Input Text    class=css-1n9d5gc    11.11.11.11
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot       
-    Sleep    2s
+    Sleep    5s
     
     # Verify Detail view modal
     Click Element    class=css-7fddae    # Version ID
@@ -144,18 +144,18 @@ AppManagementSearchList
     Page Should Contain    Activation
     Page Should Contain    Forced Update
     Page Should Contain    Status
-    Sleep    2s
+    Sleep    5s
     Click Element    id=dialogCancel    # Close button
     Sleep    2s    
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
 
     # Verify Filter panel and selection
-    # Activation 
+    # Activation field
     Click Element    (//*[text()='Activation'])[1]
     Sleep    1s
     Click Element    //*[@id="undefined_0"]    
-    Sleep    1s
+    Sleep    2s
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot
     Sleep    2s
@@ -172,12 +172,12 @@ AppManagementSearchList
     Click Element    class=rc-pagination-next
     Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
-    Sleep    1s
+    Sleep    2s
     
     Click Element    (//*[text()='Activation'])[1]
     Sleep    1s
     Click Element    //*[@id="undefined_1"]
-    Sleep    1s    
+    Sleep    2s    
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot  
     Sleep    2s
@@ -192,36 +192,57 @@ AppManagementSearchList
     Click Element    class=rc-pagination-next
     Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
-    Sleep    1s
+    Sleep    2s
     
     Click Element    (//*[text()='Activation'])[1]
     Sleep    1s
     Click Element    //*[@id="undefined_2"]
+    Sleep    2s    
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot  
     Sleep    2s
     Click Element    class=rc-pagination-next
     Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
-    Sleep    1s
+    Sleep    2s
     
-    # Forced Updated
+    # Forced Updated field
     Click Element    (//*[text()='Forced Update'])[1]   
-    Sleep    1s
+    Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
-    Sleep    1s
+    Sleep    2s
 
-    # Status
+    # Status field
     Click Element    (//*[text()='Status'])[1]
-    Sleep    1s
+    Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
-    Sleep    1s
+    Sleep    2s
     
-    # Deleted
+    # Deleted field
     Click Element    (//*[text()='Deleted'])[1]   
-    Sleep    1s
+    Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    5s
+    
+    # From & TO date fields
+    Click Element    (//*[text()='From'])[1]
+    Sleep    2s
+    Click Element    //*[@id="spassAppsFilterForm"]/div/div[2]/div[3]/div[2]/div/div/div[2]/div[2]/div[1]/div[4]      
     Sleep    1s
+    Click Element    (//*[text()='To'])[1]    
+    Sleep    2s
+    Click Element    //*[@id="spassAppsFilterForm"]/div/div[2]/div[4]/div[2]/div/div/div[2]/div[2]/div[4]/div[4]    
+    Sleep    2s
+    Click Element    class=css-doaywb    # Apply button
+    Capture Page Screenshot  
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=rc-pagination-next
+    Sleep    2s
+    Click Element    class=css-1ymwrj5    # Clear All button
     
     # Verify Register button function
     Wait Until Element Is Visible    id=spassAppsRegisterBtn
@@ -229,50 +250,53 @@ AppManagementSearchList
     Click Element    id=spassAppsRegisterBtn    
     Sleep    3s
     Wait Until Element Is Visible    id=spassAppsRegisterForm    
-    Sleep    2s
+    Sleep    5s
     
     # Verify error message when clicking Request button with empty required fields
-    Click Element    class=css-frtf5   
-    Sleep    2s
+    Click Element    class=css-frtf5
+    Page Should Contain    This field is required
+    Sleep    3s
     
-    # Verify error message for invalid Version
+    # Verify error message for invalid inputs
     Input Text    //*[@name="firstAppVer"]    aa
     Input Text    //*[@name="midAppVer"]    qq
     Input Text    //*[@name="lastAppVer"]    11
     Input Text    //*[@name="fourthAppVer"]    22
-    Page Should Contain    Version in not valid    
     Sleep    2s
-    
-
-    # Verify error message for invalid Download URL
-    Input Text    //*[@name="downloadUrl"]    www.com 
-    Page Should Contain    Website is not valid    
-    Sleep    2s
-    
+    Input Text    //*[@name="downloadUrl"]    www.com
+    Click Element    class=css-frtf5
+    Sleep    5s
+    Reload Page    
+       
     # Verify successful App Registration
     Input Text    //*[@name="firstAppVer"]    88
+    Sleep    2s
     Input Text    //*[@name="midAppVer"]    88
+    Sleep    2s
     Input Text    //*[@name="lastAppVer"]    88
-    Input Text    //*[@name="fourthAppVer"]    02
-    Input Text    //*[@name="downloadUrl"]    www.testrobot.com 
-    Click Element   class=css-frtf5
+    Sleep    2s
+    Input Text    //*[@name="fourthAppVer"]    03
+    Sleep    2s
+    Input Text    //*[@name="downloadUrl"]    www.testrobot.com
+    Sleep    1s
+    Click Element   class=css-frtf5    # Click Request button
     Sleep    5s
     
     # Verify successful display of the newly registered App
-    Input Text    class=css-1n9d5gc    88.88.88.01
+    Input Text    class=css-1n9d5gc    88.88.88.03
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot       
     Sleep    5s
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
-    Close Browser
     
     # Verify successful Export to Excel function
     Wait Until Element Is Visible    id=btnAppsListExport
-    Sleep    1s
+    Sleep    2s
     Click Element    id=btnAppsListExport
     Sleep    3s
-    Close Window  
+    Close Window
+
     
     
     
