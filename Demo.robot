@@ -129,10 +129,11 @@ AppManagement
     Page Should Contain    Status   
     Sleep    2s
     
-    # Verify Search function for Version field
+    # Verify Search function for existing Version
     Wait Until Element Is Visible    class=css-1n9d5gc    # Search version field
     Input Text    class=css-1n9d5gc    11.11.11.11
     Click Element    class=css-doaywb    # Apply button
+    Sleep    3s
     Capture Page Screenshot       
     Sleep    5s
     
@@ -145,10 +146,21 @@ AppManagement
     Page Should Contain    Forced Update
     Page Should Contain    Status
     Sleep    5s
+    Capture Page Screenshot   
     Click Element    id=dialogCancel    # Close button
     Sleep    2s    
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
+    
+    # Verify Search function for non-existing Version
+    Wait Until Element Is Visible    class=css-1n9d5gc    # Search version field
+    Input Text    class=css-1n9d5gc    00.00.00.99
+    Click Element    class=css-doaywb    # Apply button
+    Page Should Contain    No Results Found
+    Sleep    3s   
+    Capture Page Screenshot
+    Click Element    class=css-1ymwrj5    # Clear All button
+    Sleep    5s
 
     # Verify Filter panel and selection
     # Activation field
@@ -208,18 +220,21 @@ AppManagement
     
     # Forced Updated field
     Click Element    (//*[text()='Forced Update'])[1]   
+    Capture Page Screenshot
     Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
 
     # Status field
     Click Element    (//*[text()='Status'])[1]
+    Capture Page Screenshot
     Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    2s
     
     # Deleted field
-    Click Element    (//*[text()='Deleted'])[1]   
+    Click Element    (//*[text()='Deleted'])[1] 
+    Capture Page Screenshot
     Sleep    2s
     Click Element    class=css-1ymwrj5    # Clear All button
     Sleep    5s
@@ -236,7 +251,7 @@ AppManagement
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot  
     Sleep    2s
-    Click Element    class=rc-pagination-next
+    Click Element    class=rc-pagination-next    # *//li[@class='rc-pagination-next']
     Sleep    2s
     Click Element    class=rc-pagination-next
     Sleep    2s
@@ -249,12 +264,14 @@ AppManagement
     Sleep    2s
     Click Element    id=spassAppsRegisterBtn    
     Sleep    3s
-    Wait Until Element Is Visible    id=spassAppsRegisterForm    
+    Wait Until Element Is Visible    id=spassAppsRegisterForm  
+    Capture Page Screenshot  
     Sleep    5s
     
     # Verify error message when clicking Request button with empty required fields
     Click Element    class=css-frtf5
     Page Should Contain    This field is required
+    Capture Page Screenshot
     Sleep    3s
     
     # Verify error message for invalid inputs
@@ -265,10 +282,11 @@ AppManagement
     Sleep    2s
     Input Text    //*[@name="downloadUrl"]    www.com
     Click Element    class=css-frtf5
+    Capture Page Screenshot
     Sleep    5s
     Reload Page    
        
-    # Verify successful App Registration
+    # Verify error message when Version name is already taken
     Input Text    //*[@name="firstAppVer"]    88
     Sleep    2s
     Input Text    //*[@name="midAppVer"]    88
@@ -280,10 +298,28 @@ AppManagement
     Input Text    //*[@name="downloadUrl"]    www.testrobot.com
     Sleep    1s
     Click Element   class=css-frtf5    # Click Request button
+    Page Should Contain    Version name taken. Please try another name    
+    Capture Page Screenshot
+    Sleep    5s
+    Reload Page
+    
+    # Verify successful App Registration
+    Input Text    //*[@name="firstAppVer"]    88
+    Sleep    2s
+    Input Text    //*[@name="midAppVer"]    88
+    Sleep    2s
+    Input Text    //*[@name="lastAppVer"]    88
+    Sleep    2s
+    Input Text    //*[@name="fourthAppVer"]    04
+    Sleep    2s
+    Input Text    //*[@name="downloadUrl"]    www.testrobot.com
+    Sleep    1s
+    Click Element   class=css-frtf5    # Click Request button
+    Capture Page Screenshot
     Sleep    5s
     
     # Verify successful display of the newly registered App
-    Input Text    class=css-1n9d5gc    88.88.88.03
+    Input Text    class=css-1n9d5gc    88.88.88.04
     Click Element    class=css-doaywb    # Apply button
     Capture Page Screenshot       
     Sleep    5s
@@ -295,6 +331,7 @@ AppManagement
     Sleep    2s
     Click Element    id=btnAppsListExport
     Sleep    3s
+    Log To Console    %{username} ran this test on %{os}. Test Execution completed with no errors.
     Close Window
 
     
