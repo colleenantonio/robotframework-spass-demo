@@ -1,13 +1,15 @@
 *** Settings ***
 Library    Selenium2Library     
+# Default Tags 
 
 *** Variables ***    
 @{browsers}    Chrome    Firefox    Edge
-@{credentials}    adm.spass.srph@gmail.com    1q2w3e4R!   
+@{credentials}    adm.spass.srph@gmail.com    1q2w3e4R!
+@{invalid download url}    www.com    www. url with spaces. com    http://www.test.com/and%26here.com    http:\\www.test.com                  
 
 *** Test Cases ***
 NavigateToSamsungAccountLoginAdmin
-    [Tags]    Regression1_Happy path
+    [Tags]    Regression_Happy Path
     Open Browser    https://dev-admin.samsungpass.com/#/login    ${browsers}[0]
     Set Browser Implicit Wait    10s 
     Click Button    id=loginSignInBtn    
@@ -109,7 +111,7 @@ NavigationMenu
     # Not yet completed!
     
 AppManagement
-    [Tags]    Demo
+    [Tags]    Smoke
     Open Browser    https://dev-admin.samsungpass.com/#/    ${browsers}[0]
     Maximize Browser Window
     Set Browser Implicit Wait    10s 
@@ -117,9 +119,10 @@ AppManagement
     
     # Verify proper navigation to App Management > Apps > List
     Wait Until Element Is Visible    id=lnbAppManagementLink    # Apps tab
-    Click Element    id=lnbAppManagementLink   
+    Click Element    id=lnbAppManagementLink
+    Title Should Be    Samsung Pass       
     Sleep    3s
-    
+        
     # Verify column headers
     Page Should Contain    Version
     Page Should Contain    Activation    
@@ -264,7 +267,8 @@ AppManagement
     Sleep    2s
     Click Element    id=spassAppsRegisterBtn    
     Sleep    3s
-    Wait Until Element Is Visible    id=spassAppsRegisterForm  
+    Wait Until Element Is Visible    id=spassAppsRegisterForm
+    Title Should Be    Samsung Pass    
     Capture Page Screenshot  
     Sleep    5s
     
@@ -293,7 +297,7 @@ AppManagement
     Sleep    2s
     Input Text    //*[@name="lastAppVer"]    88
     Sleep    2s
-    Input Text    //*[@name="fourthAppVer"]    03
+    Input Text    //*[@name="fourthAppVer"]    05
     Sleep    2s
     Input Text    //*[@name="downloadUrl"]    www.testrobot.com
     Sleep    1s
@@ -310,7 +314,7 @@ AppManagement
     Sleep    2s
     Input Text    //*[@name="lastAppVer"]    88
     Sleep    2s
-    Input Text    //*[@name="fourthAppVer"]    04
+    Input Text    //*[@name="fourthAppVer"]    05
     Sleep    2s
     Input Text    //*[@name="downloadUrl"]    www.testrobot.com
     Sleep    1s
